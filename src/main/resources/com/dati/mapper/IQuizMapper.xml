@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dati.mapper.IQuizMapper">
+    <select id="queryQuestions" resultType="com.dati.pojo.Question">
+        SELECT id,
+               title,
+               option_a,
+               option_b,
+               option_c,
+               option_d,
+               type,
+               answer,
+               exp
+        FROM tjc.question
+    </select>
+</mapper>
